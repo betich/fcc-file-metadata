@@ -21,7 +21,6 @@ app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
     type: file.mimetype,
     size: file.type
   })
-  res.send("find")
 });
 
 const port = process.env.PORT || 3000;
